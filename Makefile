@@ -11,3 +11,7 @@ install: all
 	cp $(LIBRARY_NAME) $(DESTINATION)/$(LIBRARY_NAME).$(VERSION)
 	chmod 444 $(DESTINATION)/$(LIBRARY_NAME).$(VERSION)
 	chown root:wheel $(DESTINATION)/$(LIBRARY_NAME).$(VERSION)
+
+uninstall:
+	rm -f $(DESTINATION)/$(LIBRARY_NAME).$(VERSION)
+
